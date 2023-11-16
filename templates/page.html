@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>画像アップロード</title>
+</head>
+<body>
+    <h1>画像をふたつ選択</h1>
+
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="image1">食事前:</label>
+        <input type="file" name="image1" id="image1" accept="image/*">
+        <br>
+        <label for="image2">食事中・食事後:</label>
+        <input type="file" name="image2" id="image2" accept="image/*">
+        <br>
+        <input type="submit" value="アップロード">
+    </form>
+</body>
+</html>
